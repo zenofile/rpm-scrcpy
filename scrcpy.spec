@@ -1,7 +1,7 @@
 Name:           scrcpy
 Version:        1.8
-Release:        1%{?dist}
-Summary:        Display and control your Android device 
+Release:        2%{?dist}
+Summary:        Display and control your Android device
 License:        ASL 2.0
 URL:            https://github.com/Genymobile/scrcpy
 
@@ -10,12 +10,15 @@ Source1:        https://github.com/Genymobile/scrcpy/releases/download/v1.8/scrc
 
 BuildRequires:  meson
 BuildRequires:  gcc
-BuildRequires:  java-1.8.0-openjdk-devel 
+BuildRequires:  java-1.8.0-openjdk-devel
 BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  pkgconfig(ffms2)
 
+Requires: adb
+
 %description
-Display and control your Android device.
+This application provides display and control of Android devices
+connected on USB (or over TCP/IP).
 
 %prep
 %autosetup -v
@@ -33,5 +36,7 @@ Display and control your Android device.
 %{_datadir}/%{name}
 
 %changelog
+* Sat Apr 27 2019 zeno <zeno@bafh.org> 1.8.2
+- add adb as a requirement
 * Wed Apr 24 2019 zeno <zeno@bafh.org> 1.8-1
 - Initial packaging
