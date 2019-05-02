@@ -1,12 +1,12 @@
 Name:           scrcpy
 Version:        1.8
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Display and control your Android device
 License:        ASL 2.0
 URL:            https://github.com/Genymobile/scrcpy
 
 Source0:        https://github.com/Genymobile/%{name}/archive/v%{version}.tar.gz
-Source1:        https://github.com/Genymobile/scrcpy/releases/download/v1.8/scrcpy-server-v1.8.jar
+Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
 
 BuildRequires:  meson
 BuildRequires:  gcc
@@ -36,6 +36,8 @@ connected on USB (or over TCP/IP).
 %{_datadir}/%{name}
 
 %changelog
+* Thu May 02 2019 zeno <zeno@bafh.org> 1.8.3
+- use version variable in source
 * Sat Apr 27 2019 zeno <zeno@bafh.org> 1.8.2
 - add adb as a requirement
 * Wed Apr 24 2019 zeno <zeno@bafh.org> 1.8-1
