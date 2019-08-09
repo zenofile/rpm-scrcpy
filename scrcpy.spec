@@ -1,5 +1,5 @@
 Name:           scrcpy
-Version:        1.9
+Version:        1.10
 Release:        1%{?dist}
 Summary:        Display and control your Android device
 License:        ASL 2.0
@@ -36,6 +36,8 @@ connected on USB (or over TCP/IP).
 %{_datadir}/%{name}
 
 %changelog
+* Fri Aug 09 2019 zeno <zeno@bafh.org> 1.10-1
+- bump version to 1.10
 * Fri Jun 14 2019 zeno <zeno@bafh.org> 1.9-1
 - bump version to 1.9
 * Thu May 02 2019 zeno <zeno@bafh.org> 1.8-3
