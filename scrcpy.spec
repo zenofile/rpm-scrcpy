@@ -1,7 +1,8 @@
 Name:           scrcpy
 Version:        1.11
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Display and control your Android device
+
 License:        ASL 2.0
 URL:            https://github.com/Genymobile/scrcpy
 
@@ -26,6 +27,7 @@ connected on USB (or over TCP/IP).
 %build
 %meson -Db_lto=true -Dprebuilt_server='%{S:1}'
 %meson_build
+
 %install
 %meson_install
 
@@ -34,6 +36,7 @@ connected on USB (or over TCP/IP).
 %doc README.md DEVELOP.md FAQ.md
 %{_bindir}/%{name}
 %{_datadir}/%{name}
+%{_mandir}/man1/scrcpy.1.gz
 
 %changelog
 * Fri Nov 20 2019 zeno <zeno@bafh.org> 1.11-1
