@@ -6,7 +6,7 @@ License:        ASL 2.0
 URL:            https://github.com/Genymobile/scrcpy
 
 Source0:        https://github.com/Genymobile/%{name}/archive/v%{version}.tar.gz
-Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}.jar
+Source1:        https://github.com/Genymobile/scrcpy/releases/download/v%{version}/scrcpy-server-v%{version}
 
 BuildRequires:  meson
 BuildRequires:  gcc
