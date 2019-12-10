@@ -1,11 +1,11 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        1.11
+Version:        1.12
 
 %forgemeta -i
 
 Name:           %{pkgname}
-Release:        5%{?dist}
+Release:        1%{?dist}
 Summary:        Display and control your Android device
 License:        ASL 2.0
 
@@ -43,6 +43,8 @@ connected on USB (or over TCP/IP).
 %{_mandir}/man1/%{pkgname}.1*
 
 %changelog
+* Tue Dec 10 2019 zeno <zeno@bafh.org> 1.12-1
+- Bump version to 1.12
 * Sun Dec 01 2019 zeno <zeno@bafh.org> 1.11-5
 - Use forge macros
 * Tue Nov 26 2019 zeno <zeno@bafh.org> 1.11-4
