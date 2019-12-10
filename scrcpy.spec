@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        1.12
+Version:        1.16
 
 %forgemeta -i
 
@@ -43,25 +43,5 @@ connected on USB (or over TCP/IP).
 %{_mandir}/man1/%{pkgname}.1*
 
 %changelog
-* Tue Dec 10 2019 zeno <zeno@bafh.org> 1.12-1
-- Bump version to 1.12
-* Sun Dec 01 2019 zeno <zeno@bafh.org> 1.11-5
-- Use forge macros
-* Tue Nov 26 2019 zeno <zeno@bafh.org> 1.11-4
-- minor fixes
-* Mon Nov 25 2019 zeno <zeno@bafh.org> 1.11-3
-- minor fixes
-* Sun Nov 24 2019 zeno <zeno@bafh.org> 1.11-2
-- disable generation of debug package
-* Wed Nov 20 2019 zeno <zeno@bafh.org> 1.11-1
-- bump version to 1.11
-* Fri Aug 09 2019 zeno <zeno@bafh.org> 1.10-1
-- bump version to 1.10
-* Fri Jun 14 2019 zeno <zeno@bafh.org> 1.9-1
-- bump version to 1.9
-* Thu May 02 2019 zeno <zeno@bafh.org> 1.8-3
-- use version variable in source
-* Sat Apr 27 2019 zeno <zeno@bafh.org> 1.8-2
-- add adb as a requirement
 * Wed Apr 24 2019 zeno <zeno@bafh.org> 1.8-1
 - Initial packaging
