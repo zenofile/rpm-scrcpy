@@ -1,6 +1,6 @@
 %define         pkgname         scrcpy
 %global         forgeurl        https://github.com/Genymobile/%{pkgname}
-Version:        1.16
+Version:        1.17
 
 %forgemeta -i
 
@@ -43,5 +43,7 @@ connected on USB (or over TCP/IP).
 %{_mandir}/man1/%{pkgname}.1*
 
 %changelog
+* Sat Jan 02 2021 zeno <zeno@bafh.org> 1.17-1
+- bump version
 * Wed Apr 24 2019 zeno <zeno@bafh.org> 1.8-1
 - Initial packaging
